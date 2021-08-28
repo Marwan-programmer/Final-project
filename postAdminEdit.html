@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>post edit page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="nav-post">
+    <div class="container">
+        <div class="list-nav flex">
+        
+        <div>
+            <button><a href="./admin.html">go back to admin page</a></button>
+          </div>
+
+          <div>
+            <button id="btn-view"><a href="./viewPost.html">view</a></button>
+            <button id="publish">publish</button>
+             </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- <div id="editorjs"></div> -->
+
+ <div class="edit-post">
+    <div class="container">
+        <div class="title">
+            <textarea placeholder="Titel"></textarea>
+             </div>
+
+
+             <div class="image-post-edit">
+                 <input id="input-img" type="text" placeholder="add url image here"> 
+                 <div id="show-image-edit">
+                     <img id="img-edit">
+                </div>
+             </div>
+
+
+            
+                 <div class="text-post">
+                    <div contenteditable="true"  id="text-post-content" placeholder="add text here">
+                         <span placeholder="text" contenteditable="false" id="placeholder"></span>
+                    </div>
+                
+                 </div>
+        
+     </div>
+  
+
+    
+</div> 
+
+
+
+
+     <script src="editPost.js" type="module">
+    
+
+    </script> 
+</body>
+</html>
+
+
+
