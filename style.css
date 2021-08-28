@@ -1,0 +1,548 @@
+*{
+     box-sizing: border-box;
+}
+
+body{
+     height: 2000px;
+     margin: 0;
+     padding: 0;
+     /* background-image: url("./image\ \(5\).png"); */
+     /* Set a specific height */
+     
+     /* Create the parallax scrolling effect */
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     /* backdrop-filter: blur(6px); */
+}
+
+
+.Abuot-imags  {
+display: flex;
+justify-content: space-around;
+
+}
+
+.Abuot-imags div{
+
+     width:30%;
+}
+.Abuot-imags div img{
+width: 90%;
+
+}
+.Abuot-imags div img:hover{
+width: 100%;
+
+}
+
+.profile{
+     line-height: 40px;
+     background-color: rgb(243, 243, 243);
+     padding: 3px 40px;
+}
+
+.profile div {
+
+     height: 40px;
+} 
+
+.profile img{
+     
+     width: 40px ;
+     height: 40px;
+     border-radius: 50%;
+}
+
+
+.profile a{
+    
+    margin-left: 10px;
+    padding: 5px 20px;
+    font-size: 15px;
+    font-weight: 900;
+    cursor: pointer;
+background-color: #007bff;
+color: rgb(255, 255, 255);
+    
+    border-radius: 5px;
+
+}
+
+.profile a:hover{
+    background-color:#072833 ;
+
+     color: #ffff;
+
+}
+
+nav{
+    position:fixed;
+    background-color: #ffffff;
+    width: 100%;
+    top: 0;
+    z-index: 22;
+     box-shadow: -1px 3px 9px 0px #bdbdbd;
+}
+
+    
+}
+
+nav span{
+    font-size: 25px;
+}
+
+nav .nav-body{
+    padding: 0 40px;
+    height: 60px;
+    color: rgb(0, 0, 0);
+    line-height: 60px;  
+}
+
+nav a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+} 
+
+nav a:hover{
+  color:  #007bff;
+    
+} 
+
+nav .nav-content{
+    display: flex;
+    justify-content: space-between;
+} 
+
+nav .nav-list{
+    width: 48%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type:none;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav ul li{
+     width:20%;
+     text-decoration: none;
+}
+
+
+.about {
+     backdrop-filter: blur(6px);
+     margin-bottom: 100px;
+     width:100%;
+     background-color: #ffffffeb;
+     text-align: center;
+     padding: 30px;
+     line-height: 35px;
+     padding: 100px 0 0 0;
+     
+}
+
+
+.overlay{
+
+     color: #fff;
+    font-size: 30px;
+    background-color: rgb(0 0 0 / 40%);
+    text-align: center;
+    /* backdrop-filter: blur(6px); */
+    height: 100%;
+}
+.flex{
+     display: flex;
+     justify-content: space-between;
+}
+
+.container{
+      width:90%;
+      margin: 0 auto;
+      padding: 0 10px;
+}
+
+.box-about {
+     width: 100%;
+     padding: 10px 0;
+} 
+
+h1 , h2 , h3 ,h4{
+     margin: 0;
+}
+
+
+
+.gallery{
+
+     margin-top:30px ;
+     margin-bottom: 0;
+     height: 620px;
+     overflow: hidden;
+     position: relative;
+     background-image: url("./istock_000039944040_small.jpg");
+     background-size: cover;
+
+}
+
+.header-text{
+     width: 50%;
+     top:250px;
+     left:25%;    
+     color: #fff;
+     font-size: 40px;
+     position:absolute;
+     background-color: rgba(0, 0, 0, 0.295);
+     text-align: center;
+     backdrop-filter: blur(10px);
+}
+
+video{
+
+     width: 100%;
+     
+}
+
+
+
+.img-about {
+     width: 100%;
+     padding: 10px 0;
+    
+}
+
+.our-work {
+     margin: 100px 0;
+     background-color: #dddd;
+     color: rgb(0, 0, 0);
+     padding: 30px;
+     padding: 60px 30px;
+     font-size: 20px;
+     text-align: center;
+     backdrop-filter: blur(6px);
+     padding-top: 110px;
+
+}
+
+
+
+
+
+
+/* ////start profile  */
+
+
+.home{
+     border: 2px  solid;
+     display: flex;
+     justify-content: space-between;
+     width: 90%;
+     margin: 0 auto;
+}
+
+.imge22 {
+text-align: center;
+
+}
+
+.home ul {
+     
+     margin: 0;
+     margin: 0 20px;
+     padding: 0;
+}
+.ul{
+
+     margin-top: 20px;
+}
+.home ul li{
+     padding: 10px;
+     text-align: center;
+     color: #fff;
+     background-color: #007bff;
+     padding: 15px 20px;
+     border-bottom: 1px solid #ddd;
+     margin-top: 10px;
+     border-radius: 5px;
+}
+
+.list-profile {
+     display: block;
+     width: 30%;
+     border-right: solid 1px #000;
+     
+}
+
+.profile-imge {
+     width: 76px;
+     height: 73px;
+     border-radius: 50%;
+     border: 3px solid #0000002b;
+}
+   
+
+.inf-profile {
+    
+     padding: 3rem!important;
+     box-sizing: border-box;
+      width: 100%;
+}
+
+.inf-profile p{
+
+     border: 0px;
+}
+
+.inf-profile p:focus{
+       color: rgb(230, 31, 31);
+     border: 0px;
+}
+.form{
+ display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+
+}
+
+.form label{
+
+     display: block;
+}
+
+.form div{
+padding: 10px;
+   width:  50%;
+}
+
+textarea {
+     border: solid 1px #000;
+     text-align: center;
+     margin-top: 12px;
+     border-radius: 5px;
+     width: 100%;
+     height: 100px;
+     border: 1px rgb(255, 255, 255) solid;
+}
+
+
+.update button {
+     margin-top: 15px;
+     background-color: #007bff;
+     color: #ffff;
+     padding: 10px 15px;
+     border-radius: 5px;
+     border: 0;
+     cursor: pointer;
+     }
+
+.boio {
+     margin: 10px;
+}     
+
+
+
+/* ////end profile  */
+
+
+
+
+
+
+
+
+
+
+
+/* blog bage */
+
+
+.img-blog{
+     width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+
+
+/* abot us */
+
+
+
+.head-client{
+    text-align:center;
+    padding:0 190px;
+}
+.content-client{
+padding-top:100px ;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-client img{
+
+     width:130px;
+}
+.content-client .client{
+background-color: #faf8ff82;
+box-shadow: 0 0 12px 0px #ccc7c747;
+   display: flex;
+   width: 48%;
+   padding: 49px;
+}
+.content-client .client div{
+    padding-left: 20px;
+}
+.content-client .client h5{
+margin: 0 5px;
+font-size: 25px;
+}
+ul{
+    list-style: none;
+}
+.slide{
+    text-align: center;
+    padding-top:90px ;
+}
+.section-sixe span {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    background-color: rgb(121, 115, 115);
+    border-radius: 50%;
+    display: inline-block;
+}
+.slide .active{
+    background-color:#854fee;
+    height: 12px;
+    width: 12px;
+}
+
+
+
+.update button:hover{
+background-color: #007bffa9;
+
+}
+
+
+/* contact */
+
+
+.contact {
+     border: solid 1px #000;
+     margin-top: 20px;
+     padding: 30px;
+     background-color: black;
+     color: #ffff;
+     width: 100%;
+}
+/* 
+.icon img{
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+}
+
+.first div{
+     padding: 30px 0;
+     width: 50%;
+     
+}
+
+.info span{
+
+     display: block;
+     padding: 10px;
+     font-size: 20px;
+}
+
+.icon{
+
+     margin-top: 30px;
+} */
+
+
+
+.contact2 , .info{
+
+     width: 40%;
+}
+
+.info h2{
+
+     font-size: 60px;
+}
+
+.info div{
+     margin:10px 0 ;
+}
+
+.info span{
+display: block;
+padding: 10px 0;
+
+}
+
+.info .icon img{
+width: 30px;
+border-radius: 20px;
+
+}
+
+
+.contact2 .input-info div{
+
+     display:flex ;
+     justify-content: space-between;
+     margin: 30px 0;
+}
+
+.contact2 input,.contact2  label{
+     
+     height: 30px;
+
+}
+
+.contact2 input{
+
+     width: 70%;
+     border-radius: 7px;
+}
+
+.contact2  label{
+
+     width: 30%;
+}
+.contact2 button ,.contact2 textarea{
+
+     width: 100%;
+     height: 40px;
+     background-color: rgba(0, 0, 0, 0);
+     color: #ffff;
+
+}
+
+.contact2 button {
+
+     border: 1px #fff solid;
+
+}
+
+
+.contact2 button:hover{
+
+     background-color: rgba(20, 20, 20, 0.89);
+     cursor: pointer;
+}
+
+.contact2 textarea{
+
+     height: 100px;
+     margin-bottom: 10px;
+}
