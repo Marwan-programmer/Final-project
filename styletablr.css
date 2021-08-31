@@ -1,0 +1,49 @@
+table th,td{
+    
+    text-align: left;
+    font:  sans-serif;
+    
+}
+.search{
+    
+    padding: 10px solid grey;
+    
+    background-color:gray;
+    border: auto solid grey;
+    
+}
+
+
+    
+
+
+    
+
+
+th,td,.search{ 
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid gray;
+    
+}
+table,h1.search{
+    height:100%;
+    width: 100%;
+    padding: 10px;
+border-collapse: collapse;
+margin-bottom: 1px solid gray;
+border: 1px solid gray;
+border-top: 1px solid gray;
+
+
+}
+th{
+    color:black;
+    background-color:white;
+}
+td{
+    background-color:white;
+    color:gray;
+}
+
+

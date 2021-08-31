@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>final project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <div class="main"></div>
+            
+            
+                
+<h1>
+              <div class="search">
+            <input type="text"id="my input" placeholder="search"></div>
+
+            <table>
+            
+                <div class="info">
+                <tr>
+                    <th></th>
+                    <th>user Name</th>
+                    <th>first name</th>
+                    <th>Last name</th>
+                    <th>Email</th>
+                    <th></th>
+                
+                </tr>
+            </div>
+        </h1>
+
+    
+                <tr>
+                 <td> <img src="user-icon-260nw-523867123.jpg"width=100 ></td>
+                       
+                     <td> Altiumjase  </td>
+                        <td> jason</td>
+                        <td>Hoawie</td>
+                        <td>jason.howai@altium.com</td>
+                        <td>
+                            
+                        </td>
+                </tr>
+                <tr> 
+                    <td><img src="user-icon-260nw-523867123.jpg" width=100>
+                    
+                     </td>
+                    
+                    <td> 
+                    Designer  </td>
+                        <td> Desmond</td>
+                        <td>igner</td>
+                        <td>dis.igner@altium.com</td>
+                </tr>
+                <tr>
+                    <td> <img src="user-icon-260nw-523867123.jpg" width=100></td>
+                       <td>NGenere  </td>
+                        <td> Neal</td>
+                        <td>Genere</td>
+                        <td>n.geneare@altium.com</td>
+                </tr>
+                <tr>
+                    <td> <img src="user-icon-260nw-523867123.jpg "width=100 ></td>
+                       <td> Sientist </td>
+                        <td> Semon</td>
+                        <td>Entist</td>
+                        <td>si.entist@altium.com</td>
+                </tr>
+                <tr>
+                    <td> <img src="user-icon-260nw-523867123.jpg"width=100 ></td>
+                        <td>System  </td>
+                        <td> system</td>
+                        <td>system</td>
+                        <td></td>
+                </tr>
+                <tr>
+                    <td> <img src="user-icon-260nw-523867123.jpg"width=100 ></td>
+                         <td>Wrighter  </td>
+                        <td> Wally</td>
+                        <td>Righter</td>
+                        <td>w.Righter@altium.com</td>
+                </tr>
+                <tr> <td><img src="user-icon-260nw-523867123.jpg" width=100></td>
+                    <td> 
+                        Admin  </td>
+                        <td> Admin</td>
+                        <td>Admin</td>
+                        <td></td>
+                </tr>
+                
+                
+                    </table>
+    </body>
+</html>
+
+                
+            
+
+
+     
+        
+        
+
+        
+        
