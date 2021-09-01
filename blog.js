@@ -26,7 +26,7 @@ fetch("http://localhost:3000/posts")
     </div>
     
     <div class="like-comment">
-    <span class="like"><img src="./18764067051529659194-512.png"></span>
+    <span class="like"><img src="./images/18764067051529659194-512.png"></span>
     <span class="comment">Comment</span>
     </div>
     
@@ -34,34 +34,27 @@ fetch("http://localhost:3000/posts")
     
     <div class="all-comment" id="inside">
     <div class="comment-content">
-    <img src="مروان.jpeg">
+    <img src="./images/مروان.jpeg">
     <span>hello my friend where have you been</span>
     </div>
     
     
     <div class="comment-content">
-    <img src="مروان.jpeg">
+    <img src="./images/مروان.jpeg">
     <span>hello my friend where have you been</span>
     </div>
     
     
     
     <div class="comment-content">
-    <img src="مروان.jpeg">
-    <span>hI love the sarcasm, nobody gets it....</span>
-    </div>
-    
-    
-    
-    <div class="comment-content">
-    <img src="مروان.jpeg">
+    <img src="./images/مروان.jpeg">
     <span>hello my friend where have you been</span>
     </div>
     </div>
     
     
     <div class="r-commment">
-    <img src="مروان.jpeg">
+    <img src="./images/مروان.jpeg">
     <input type="text" name="" id="com" placeholder="write a comment....">
     </div>
     <!-- end of blog -->

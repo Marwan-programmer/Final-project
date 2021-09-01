@@ -106,10 +106,18 @@ fetch("http://localhost:3000/posts",option)
 
 })
 
-// const btnView=document.querySelector("#btn-view");
+// const btnView=document.querySelector("#btn-view")
 
 
 
 
 
+
+
+
+
+
+let name ="marwan"
+
+export default name ;
 
