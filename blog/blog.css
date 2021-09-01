@@ -1,0 +1,109 @@
+
+
+
+
+
+
+.blog{
+   
+    background-color: #fff;
+    padding: 20px;
+    width: 40%;
+    margin: 50px auto;
+    border: rgb(68, 68, 68) solid 1px;
+    margin-bottom: 60px;
+    border-radius: 5px;
+}
+.blog .img-box img {
+
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .blog-content{
+  
+    margin: 20px 0;
+  }
+  
+  .like-comment{
+  margin:30px 0;
+  display: flex;
+  justify-content: space-between;
+  border-top:1px solid #000 ;
+  border-bottom:1px solid #000 ;
+  padding: 10px 20px;
+  }
+  
+  .like-comment img{
+    color: rgb(0, 0, 0);
+    width:20px;
+    height: 20px;
+  }
+  
+  
+  .like-comment span{
+  
+    font-size: 18px;
+    font-weight: 900;
+  }
+  
+  
+  .r-commment {
+  
+    display: flex;
+    justify-content: start;
+  }
+  .r-commment img{
+  margin-right: 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+  }
+  
+  .r-commment input{
+  line-height: 35px;
+    height: 35px;
+    width:100%;
+  border-radius: 10px;
+  outline: none;
+  border: 1px solid rgb(32, 32, 32);
+  
+  }
+  
+  .comment-content {
+  margin: 30px 0;
+    display: flex;
+    justify-content: start;
+  }
+  .comment-content img{
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+  
+  .comment-content span{
+    background-color: rgb(226, 222, 222);
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+
+  .img-blog{
+    width: 40px;
+   height: 40px;
+   border-radius: 50%;
+}
+
+
+
+ /* footer blog */
+ .footer-blog{
+    width: 100%;
+ background-color: #000;
+   text-align: center;
+   color:#fff;
+   padding: 10px;
+   position:  fixed;
+   bottom: 0;
+}
