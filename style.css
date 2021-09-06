@@ -61,46 +61,6 @@ width: 100%;
 
 }
 
-.profile{
-
-     line-height: 55px;
-    
-     padding: 3px 40px;
-}
-
-.profile div {
-
-     height: 40px;
-} 
-
-.profile img{
-     
-     width: 40px ;
-     height: 40px;
-     border-radius: 50%;
-}
-
-
-.profile a{
-    
-    margin-left: 10px;
-    padding: 5px 20px;
-    font-size: 15px;
-    font-weight: 900;
-    cursor: pointer;
-background-color: #007bff;
-color: rgb(255, 255, 255);
-    
-    border-radius: 10px;
-
-}
-
-#register a:hover{
-    background-color:#6194cc ;
-
-     color: #ffff;
-
-}
 
 .nav-home{
     position:fixed;
@@ -120,7 +80,7 @@ color: rgb(255, 255, 255);
 
 .nav-home  .nav-body{
     padding: 0 40px;
-    height: 60px;
+
     color: rgb(0, 0, 0);
     line-height: 60px;  
 }
@@ -138,13 +98,14 @@ color: rgb(255, 255, 255);
 .nav-home  .nav-content{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 } 
 
 .nav-home  .nav-list{
     width: 48%;
 }
 
-.nav-home  ul {
+.nav-list  ul {
     margin: 0;
     padding: 0;
     list-style-type:none;
@@ -153,7 +114,7 @@ color: rgb(255, 255, 255);
     justify-content: center;
     
 }
-.nav-home  ul li{
+.nav-list  ul li{
      width:15%;
      text-decoration: none;
      margin-right: 5px;
@@ -161,6 +122,99 @@ color: rgb(255, 255, 255);
      font-size: 18px;
     }
 
+
+/* .profile div {
+
+     height: 40px;
+     
+}  */
+
+
+
+.profile .subN{
+     display: none;
+     
+}
+
+.profile .sub{
+
+     position: absolute;
+     top: 70px;
+     display:block;
+     background-color: #f9f9f9;
+     padding: 5px;
+}
+
+
+.profile .sub li{
+
+     width: 80px;
+     height: 50px;
+
+}
+
+.profile ul {
+     margin: 0;
+     padding: 0;
+}
+
+
+.profile .login{
+    
+    margin-left: 10px;
+    padding: 5px 20px;
+    font-size: 15px;
+    font-weight: 900;
+    cursor: pointer;
+background-color: #007bff;
+color: rgb(255, 255, 255);
+    
+    border-radius: 10px;
+
+}
+
+.profile .nav-user{
+
+align-items: center;
+;
+padding: 0 5px;
+cursor: pointer;
+}
+
+.profile .nav-user:hover{
+
+     background-color: rgba(235, 235, 235, 0.867);
+     border-radius: 10px;
+}
+.nav-home .profile #userName{
+
+     font-size: 20px;
+     margin-left: 10px
+
+}
+
+#register .login:hover{
+    background-color:#6194cc ;
+
+     color: #ffff;
+
+}
+
+
+#register h2{
+     margin: 0;
+}
+
+#register img{
+     width: 40px;
+     border-radius: 50%;
+     
+}
+
+.nav-home .active{
+
+     color:darkblue;
+}
 
 .about {
      backdrop-filter: blur(6px);
@@ -217,26 +271,6 @@ img{
 }
 
 
-
-/*post item */
-
-
-
-
-
-
-/*login*/
-
-
-/* input:-webkit-autofill {
-    box-shadow: 3px 1px 20px 2px rgb(51 51 51) inset;
-    z-index: 1;
-    padding: 10px;
-    border-radius: 5px;
-    color:rgb(0, 0, 0);
-    outline:none;
-
-  } */
 
 .gallery{
 
@@ -369,21 +403,6 @@ ul{
     width: 12px;
 
 }
-
-
-
-
-
-
-
-
-
-
-/* post */
-
-
-
-/* contact */
 
 
 .contact {
