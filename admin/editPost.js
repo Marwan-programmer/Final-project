@@ -1,7 +1,7 @@
 // let dataImg=""
 // let dataTitle="";
 
-
+console.log("yse it work from edit post ")
 const editor=document.querySelector("#text-post-content");
 
 editor.addEventListener("input",function(){
@@ -23,7 +23,7 @@ editor.addEventListener("input",function(){
 
 const inputImg=document.querySelector("#input-img");
 const img=document.querySelector("#img-edit");
-const title=document.querySelector("textarea");
+const title=document.querySelector("#title");
 const contenteditable = document.querySelector('[contenteditable]');
 
 let imgValue="";
@@ -84,7 +84,7 @@ console.log("text", text)
 }
  
 
-
+console.log(dataPost)
 let headers = new Headers();////
 headers.append('Content-type', 'application/json');
 let option = {
@@ -97,8 +97,10 @@ let option = {
 fetch("http://localhost:3000/posts",option)
 .then(req => req.json())
   .then(res => {
-      
+    window.location.href = "../blog/bloge.html"
+
     console.log(res)
+
 
 });
 
@@ -117,7 +119,7 @@ fetch("http://localhost:3000/posts",option)
 
 
 
-let name ="marwan"
+// let name ="marwan"
 
-export default name ;
+// export default name ;
 
