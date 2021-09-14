@@ -173,6 +173,99 @@ body{
 }
 
 
+/* .profile div {
+
+     height: 40px;
+     
+}  */
+
+
+
+.profile .subN{
+     display: none;
+     
+}
+
+.profile .sub{
+
+     position: absolute;
+     top: 70px;
+     display:block;
+     background-color: #f9f9f9;
+     padding: 5px;
+}
+
+
+.profile .sub li{
+
+     width: 80px;
+     height: 50px;
+
+}
+
+.profile ul {
+     margin: 0;
+     padding: 0;
+}
+
+
+.profile .login{
+    
+    margin-left: 10px;
+    padding: 5px 20px;
+    font-size: 15px;
+    font-weight: 900;
+    cursor: pointer;
+background-color: #007bff;
+color: rgb(255, 255, 255);
+    
+    border-radius: 10px;
+
+}
+
+.profile .nav-user{
+
+align-items: center;
+;
+padding: 0 5px;
+cursor: pointer;
+}
+
+.profile .nav-user:hover{
+
+     background-color: rgba(235, 235, 235, 0.867);
+     border-radius: 10px;
+}
+.nav-home .profile #userName{
+
+     font-size: 20px;
+     margin-left: 10px
+
+}
+
+#register .login:hover{
+    background-color:#6194cc ;
+
+     color: #ffff;
+
+}
+
+
+#register h2{
+     margin: 0;
+}
+
+#register img{
+     width: 40px;
+     border-radius: 50%;
+     
+}
+
+.nav-home .active{
+
+     color:darkblue;
+}
+
 .about {
      backdrop-filter: blur(6px);
      margin-bottom: 100px;
@@ -360,7 +453,6 @@ ul{
 }
 
 
-
 .contact {
      border: solid 1px #000;
      margin-top: 20px;
@@ -449,7 +541,7 @@ ul{
 
      resize:vertical;
      min-height: 100px;
-       
+
 }
 
 

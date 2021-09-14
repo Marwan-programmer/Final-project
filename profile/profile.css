@@ -14,7 +14,7 @@ body{
 /*flex  */
 .flex{
     display: flex;
-    justify-content: space-between;
+   
 }
 /*flex  */
 
@@ -29,61 +29,55 @@ body{
 
 /* ////start profile  */
 
-
-.home{
+.Account-content{
+    
     border: 2px  solid;
-    display: flex;
     justify-content: space-between;
     width: 90%;
     margin: 0 auto;
-}
-
-.imge22 {
-text-align: center;
-
-}
-
-.home ul {
-    
-    margin: 0;
-    margin: 0 20px;
-    padding: 0;
-}
-.ul{
-
     margin-top: 20px;
 }
-.home ul li{
-    padding: 10px;
-    text-align: center;
+
+.list-profile {
+    width: 30%;
+    border-right: solid 1px #000;
+}
+
+.box-img {
+text-align: center;
+}
+
+
+.box-btn-list{
+
+    flex-direction: column;
+    margin-top: 50px;
+}
+.Account  button{
+    width: 70%;
     color: #fff;
     background-color: #007bff;
     padding: 15px 20px;
-    border-bottom: 1px solid #ddd;
-    margin-top: 10px;
     border-radius: 5px;
-}
-
-
-
-
-
-
-.list-profile {
+    margin: 5px 20px;
+    margin: 5px auto;
     display: block;
-    width: 30%;
-    border-right: solid 1px #000;
-    
 }
+
+
 
 .profile-imge {
     width: 76px;
     height: 73px;
-    border-radius: 50%;
-    border: 3px solid #0000002b;
+    
 }
-  
+.header-edit{
+    margin-bottom: 70px;
+    
+}
 
+
+.header-edit h2{margin: 0;}
 .inf-profile {
    
     padding: 3rem!important;
@@ -91,65 +85,60 @@ text-align: center;
      width: 100%;
 }
 
-.inf-profile p{
 
-    border: 0px;
+.input-info {
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+    }
+
+.input-info div{
+flex-direction: column;
+margin-bottom: 40px;
+flex-wrap: nowrap;
+width: 45%;
+
+
 }
-
-.inf-profile p:focus{
-      color: rgb(230, 31, 31);
-    border: 0px;
+.input-info div label{
+    margin-bottom: 10px;
 }
-.form{
-display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-}
-
-.form label{
-
-    display: block;
-}
-
-.form div{
-padding: 10px;
-  width:  50%;
-}
-
-textarea {
-    border: solid 1px #000;
-    text-align: center;
-    margin-top: 12px;
-    border-radius: 5px;
+.input-info div input{
     width: 100%;
-    height: 100px;
-    border: 1px rgb(255, 255, 255) solid;
+    height: 30px;
+   border-radius: 8px;    
+   outline: 0;
+   padding: 5px 10px;
+   font-size: 20px;
 }
 
 
-.update button {
-    margin-top: 15px;
+
+
+
+.input-submit input ,.input-submit #cancel{
+    width:100px;
+    color: #fff;
     background-color: #007bff;
-    color: #ffff;
-    padding: 10px 15px;
+    padding: 5px 10px;
     border-radius: 5px;
-    border: 0;
-    cursor: pointer;
-    }
-    .Ca2 button{
-        background-color: brown;
-    }
-
-    .update button:hover{
-        background-color: #007bffa9;
-        
-        }
-
-.boio {
-    margin: 10px;
-}     
+    margin: 5px 5px;
+    
+}
 
 
+.input-submit  #cancel{
+    background-color: rgb(173, 84, 84);
+}
 
-/* ////end profile  */
+
+.display{
+
+    display: none;
+}
+
+
+.view{
+
+
+}
