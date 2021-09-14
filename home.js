@@ -42,7 +42,7 @@ if(token!=null){
   <div id="sub"class="subN">
   <ul>
   <li><a id="logOut" href="#">Log out</a></li>
-  <li><a href="./profile/profile.html">view profile</a></li>
+  <li><a href="./profile/profile.html">view</a></li>
   </ul>
   </div>
   

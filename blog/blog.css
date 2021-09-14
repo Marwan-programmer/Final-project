@@ -2,7 +2,7 @@
 
 
 body{
-  
+  margin: 0;
 /* background-image: url('../images/blog2.jpg'); */
 }
 
@@ -37,12 +37,14 @@ body{
   padding: 10px 20px;
   }
   
-  .like-comment img{
+  .like-comment svg{
     color: rgb(0, 0, 0);
-    width:20px;
+    width:50px;
     height: 20px;
   }
-  
+  .like-comment svg .active-like{
+    fill:rgb(11, 80, 228);
+  }
   
   .like-comment span{
   
@@ -63,6 +65,11 @@ body{
     border-radius: 50%;
   }
   
+
+  .r-commment form{
+    width:100%;
+
+  }
   .r-commment input{
   line-height: 35px;
     height: 35px;
