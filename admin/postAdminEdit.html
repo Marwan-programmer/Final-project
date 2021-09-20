@@ -52,8 +52,14 @@
                     </div>
 
                     <div>
-                        <button>Upload</button>
+                        <form id="uploadf" enctype="multipart/form-data" class="upload-form">
+                        <input type="file" id="upload" name="upload">
+                               
+                                <input type="submit" id="sub" value="Submit">
+
+
                         <button class="insert-img">Insert from URL</button>
+                     </form>
                     </div>
 
 
@@ -68,8 +74,12 @@
 
             
                  <div class="text-post">
+                     <div class="header-text-post">
+                         <p>add your text here for blog post </p>
+
+                     </div>
                     <div contenteditable="true"  id="text-post-content" placeholder="add text here">
-                         <span placeholder="text" contenteditable="false" id="placeholder"></span>
+                         <span placeholder="add text here ....." contenteditable="false" id="placeholder"></span>
                     </div>
                 
                  </div>

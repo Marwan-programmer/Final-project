@@ -66,10 +66,10 @@ body{
      padding: 3px 40px;
 }
 
-.profile div {
+/* .profile div {
 
      height: 40px;
-} 
+}  */
 
 .profile img{
      
@@ -154,7 +154,7 @@ body{
      width: 48%;
 }
 
-.nav-home  ul {
+.nav-home  .nav-list ul {
      margin: 0;
      padding: 0;
      list-style-type:none;
@@ -164,7 +164,7 @@ body{
 
 }
 
-.nav-home  ul li{
+.nav-home .nav-list ul li{
      width:15%;
      text-decoration: none;
      margin-right: 5px;
@@ -188,8 +188,7 @@ body{
 
 .profile .sub{
 
-     position: absolute;
-     top: 70px;
+    
      display:block;
      background-color: #f9f9f9;
      padding: 5px;
@@ -198,8 +197,6 @@ body{
 
 .profile .sub li{
 
-     width: 80px;
-     height: 50px;
 
 }
 
@@ -281,25 +278,29 @@ cursor: pointer;
 
 .profile .sub{
 
-     position: absolute;
-     top: 70px;
+    
      display:block;
-     background-color: #f9f9f9;
      padding: 5px;
      border-radius: 10px;
+     margin-top: 11px;
+
 }
 
 .profile .sub li{
      padding: 5px;
      margin: 0;
+     height: 60px;
+     line-height: 45px;
      
 }
 .profile .sub a {
 
-     width: 80px;
+     width: 94px;
      display: inline-block;
      text-align: center;
      border-radius: 10px;
+     height: 35px;
+    line-height: 20px;
     
  }
  .profile .sub a:hover{
@@ -437,7 +438,7 @@ img{
      height: 620px;
      overflow: hidden;
      position: relative;
-     background-image: url("./images/istock_000039944040_small.jpg");
+     background-image: url("./images/office1.jpeg");
      background-size: cover;
 
 }
@@ -497,10 +498,10 @@ video{
 }
 .content-client{
 
-     padding-top:100px ;
+     
      display: flex;
      justify-content: space-between;
-     padding-top:100px ;
+     padding-top:50px ;
      display: flex;
      flex-wrap: wrap;
      justify-content: space-around;
@@ -527,6 +528,15 @@ video{
      margin-bottom: 30px;
 
 }
+
+.content-client p{
+ color:#00000091;
+}
+
+.head-client h2{
+     font-size: 40px;
+}
+
 .content-client .client div{
      padding-left: 20px;
 }
@@ -645,17 +655,23 @@ ul{
 }
 
 .contact2 textarea{
-<<<<<<< HEAD
 
      resize:vertical;
      min-height: 100px;
 
-=======
-     resize:vertical;
-     /* height: 100px; */
-     margin-bottom: 10px;
->>>>>>> blog-fetch-fainal
 }
 
 
 
+
+
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+
+.header-text span{
+
+    font-family: 'Orbitron', sans-serif;
+  	color: #66ff99;
+  	font-size: 56px;
+      padding: 5px;
+
+}

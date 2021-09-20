@@ -1,7 +1,4 @@
-// let dataImg=""
-// let dataTitle="";
 
-console.log("yse it work from edit post ")
 const editor=document.querySelector("#text-post-content");
 
 editor.addEventListener("input",function(){
@@ -26,59 +23,38 @@ const img=document.querySelector("#img-edit");
 const title=document.querySelector("#title");
 const contenteditable = document.querySelector('[contenteditable]');
 
-let imgValue="";
-let titleValue="";
-let text="";
 
+// inputImg.addEventListener("input",function(){
 
-inputImg.addEventListener("input",function(){
+//   imgValue  = inputImg.value;
+//  img.src = imgValue; 
 
-  imgValue  = inputImg.value;
- img.src = imgValue; 
-
-})
+// })
 
 
 
 const publish=document.querySelector("#publish");
-let allText="";
-let dataPost=""/////all data to the post complate
 
-publish.addEventListener("click", function(){
+let imgValue="";
+let titleValue="";
+let text="";
+
+publish.addEventListener("click", function(e){
+    e.preventDefault();
     titleValue=title.value;
-const data={
-
-    contenteditable:contenteditable.textContent,
-    img:img.src,
-    title:titleValue
-     
-
-}    
-// console.log(data)
-// console.log(contenteditable.childNodes[0].nodeValue)
- text=`${contenteditable.childNodes[0].textContent} \n`;
-// let dataText={first:contenteditable.childNodes[0].textContent}
-for(let i=0;contenteditable.childElementCount>i;i++){
-    // console.log(contenteditable.children[i].textContent);
-  
-    
-    // dataText['p' + i] = contenteditable.children[i].textContent;
-     text+=`${contenteditable.children[i].textContent} \n`;
-     
-
  
-
-
+ text=`${contenteditable.childNodes[0].textContent} \n`;
+for(let i=0;contenteditable.childElementCount>i;i++){
+  
+     text+=`${contenteditable.children[i].textContent} \n`;
+    
 }
-// allText+=
-// console.log("alltext",dataText.length)
+const fileInput = document.querySelector('#upload') ;
+const pathi= fileInput.files.item(0).name;
 
-// console.log(dataText)
-console.log("text", text)
-// console.log("div",contenteditable.textContent)
-// console.log("line","we are \n \n\n and")
- dataPost={
-    img:  imgValue,
+
+ let dataPost={
+    img: fileInput.files.item(0).name,
     title: titleValue,
      text:  text
 }
@@ -87,17 +63,20 @@ console.log("text", text)
 console.log(dataPost)
 let headers = new Headers();////
 headers.append('Content-type', 'application/json');
+
+
 let option = {
 	method: 'POST',
 	body: JSON.stringify(dataPost),
 	headers
 };
 
-
 fetch("http://localhost:3000/posts",option)
 .then(req => req.json())
   .then(res => {
-    window.location.href = "../blog/bloge.html"
+    uploade();
+
+    window.location.href = '../blog/bloge.html'
 
     console.log(res)
 
@@ -108,18 +87,49 @@ fetch("http://localhost:3000/posts",option)
 
 })
 
-// const btnView=document.querySelector("#btn-view")
+
+///////////test 
+function uploade(){
+
+        
+    var form = document.getElementById("uploadf");
+    form.submit()
+
+            const fileInput = document.querySelector('#upload') ;
+    
+            const formData = new FormData(form);
+    
+            const path= fileInput.files.item(0).name
+            // formData.append('images[]', files[0], files[0].name);
+            // img.innerHTML=formData;
+            console.log(fileInput.files.item(0).name) ;
+            // Image.upload(formData);
+            fetch('http://localhost:3000/upload', {
+                method: 'post',
+                body:formData
+            })
+            .then(respond=>respond.json())
+            .then(result=>{
+    console.log(result)
+    
+            
+         
+    
+    })
+     
+    
+} 
 
 
 
+// const options = {
+//   method: 'POST',
+//   body: formData,
+//   // If you add this, upload won't work
+//   // headers: {
+//   //   'Content-Type': 'multipart/form-data',
+//   // }
+// };
 
-
-
-
-
-
-
-// let name ="marwan"
-
-// export default name ;
+// fetch('your-upload-url', options);
 

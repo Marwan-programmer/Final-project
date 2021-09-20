@@ -34,9 +34,8 @@ if(token!=null){
  
   proflie.innerHTML=`<div id="info-user-nav" class="nav-user flex">
   
-  <img  class="img-user "alt="mohammed" src="./images/f.png">
+  <img  class="img-user "alt="mohammed" src="../images/f.png">
   <span id="userName">${result[0].firstName}</span>
-  
   
   </div>
   <div id="sub"class="subN">
@@ -58,7 +57,7 @@ if(token==null){
 
     proflie.innerHTML=`
     
-    <a class="login" href="./regesteration/logIn.html">Log in</a>
+    <a class="login" href="../regesteration/logIn.html">Log in</a>
     <a class="login" href="./regesteration/regestration.html">Sign in</a>
     `
 }
@@ -71,9 +70,18 @@ if(token==null){
 proflie.addEventListener("click", function (e) {
 
 
-    console.log(e.target)
+    console.log(e.target.tagName)
   const sub=document.querySelector("#sub")
-  sub.classList.toggle("sub")
+  sub.classList.toggle("sub");
+  
+  document.body.addEventListener("click",function(eb){
+    if(eb.target.tagName!="IMG" && eb.target.tagName!="SPAN"){
+       sub.classList.remove("sub");
+      console.log("out side img")
+
+    }
+
+  })
 
   const logOut=document.querySelector("#logOut");
 
@@ -101,3 +109,6 @@ logOut.addEventListener("click",function(){
 // }
 
 // })
+
+
+// export default 

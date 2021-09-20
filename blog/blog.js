@@ -1,9 +1,10 @@
 
 import {Post} from  './singlePost.js'
+import {Comments} from './singlePost.js'
 window.like= like;
 window.submitForm= submitForm;
-
-const blog=document.querySelector("#content-bloge");
+window.drop= drop;
+const blog=document.querySelector("#content-blog");
 
 /////get all posts by fetch
 fetch("http://localhost:3000/posts")
@@ -13,13 +14,13 @@ fetch("http://localhost:3000/posts")
     for(let i=res.length-1;i>-1;--i){
      
       blog.insertAdjacentHTML("beforeend",Post(res[i]));
-     console.log(i)
+     console.log(i);
    
     }
-    comment();
-
+    userLike()
 });
 
+let token=localStorage.getItem('token');
 
 
 function like(index) {
@@ -32,7 +33,6 @@ function like(index) {
   postId:likeIndex
  }
 
- let token=localStorage.getItem('token')
 
 
 
@@ -49,14 +49,14 @@ function like(index) {
  }
 
  function active(){
-  like.classList.toggle('active-like');
  }
 fetch('http://localhost:3000/like',option)
 .then(responde=>responde.json())
 .then(result=>{
+  like.classList.toggle('active-like');
 
   console.log(result)
-  active()
+  active()/////active after fetch
 
 })
 
@@ -105,12 +105,110 @@ const input=document.querySelector(`#com${num}`);
 // <img src="../images/مروان.jpeg">
 // <span id="text-comment">${input.value}</span>
 // </div>` ;
-text.insertAdjacentHTML('beforeend',`<div class="comment-content" >
-<img src="../images/مروان.jpeg">
-<span id="text-comment">${input.value}</span>
- </div>`)
 
-console.log(input.value)
-input.value="";
+let dataComment={
+  postId:num,
+  comment:input.value
+}
+
+
+let optionComment={
+  method: "POST",
+  headers: {
+    'Content-Type': 'application/json',
+    'Authorization':"Bearer "+token
+,
+  
+},
+body: JSON.stringify(dataComment),
 
 }
+
+
+
+////fetch
+fetch('http://localhost:3000/comment',optionComment)
+.then(responde=>responde.json())
+.then(result=>{
+
+  console.log(result)
+  text.insertAdjacentHTML('beforeend',`<div class="comment-content" >
+  <img src="../images/مروان.jpeg">
+  <span>${result[0].firstName}</span>
+  <span id="text-comment">${input.value}</span>
+   </div>`)
+  
+  input.value="";
+  console.log(result);
+
+
+})
+
+}
+
+
+//////////////event comment drop 
+
+
+function drop(e){
+  let numComment=e.target.getAttribute("data-btn-comment");
+  console.log(numComment)
+
+  const showComment=document.querySelector(`#display-comment-${numComment}`);
+  const bodyContent=document.querySelector(`#body-content-${numComment}`);
+  console.log(showComment);
+  let count=0;
+  if(showComment.style.display === 'none') {
+    showComment.style.display="block";
+   
+    fetch(`http://localhost:3000/comments/${numComment}`)
+      .then(responde=>responde.json())
+      .then(resComments=>{
+        for(let i=resComments.length-1;i>-1;--i){
+     
+          bodyContent.insertAdjacentHTML("afterBegin",Comments(resComments[i]));
+         console.log(resComments[i]);
+       
+        }
+
+
+      })
+    } else {
+      showComment.style.display="none";
+      bodyContent.innerHTML="";
+      }
+
+
+      
+}
+
+
+
+////////fetch likes of user  //////
+function userLike(){
+const optionLike = {
+    method: "POST",
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization':"Bearer "+token
+  ,
+    
+  }
+}
+
+
+fetch(`http://localhost:3000/likes`,optionLike)
+.then(res => res.json())
+  .then(result => {
+  for(let i=0;i<result.length;i++){
+    console.log(result[i].postId);
+
+    const like=document.querySelector(`#icon-${result[i].postId}`) ;
+       like.classList.add('active-like');
+
+
+  }
+  })
+
+}
+////////fetch likes of user  //////
