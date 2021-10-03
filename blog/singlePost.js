@@ -1,11 +1,12 @@
 function Comments(resComments){
 return`
 <div class="comment-content" >
-  <img src="../images/مروان.jpeg">
- 
-  <span id="text-comment">
-  <span>${resComments.firstName} </span>
-  ${resComments.comment}</span>
+  <img src="../images/f.png">
+ <div id="text-comment">
+ <span>${resComments.firstName} </span>
+ <p id="text-${resComments.postId}-${resComments.id}"></p>
+ </div>
+  
    </div>`
 
 
@@ -21,7 +22,7 @@ function Post(res){
       <h1>${res.postTitle}</h1>
     </div>
     <div class="img-box">
-    <img src="../../../../nodeProject/images/${res.PostImage}">
+    <img src="../../images/${res.PostImage}">
     </div>
     <div class="blog-content" style="white-space: pre-line">
     ${res.PostText}
@@ -45,7 +46,7 @@ function Post(res){
     
     
     <div class="r-commment">
-    <img src="../images/مروان.jpeg">
+    <img src="../images/f.png">
     <form id="form" onsubmit="submitForm(event)" data-comment-post="${res.id}">
     <input autocomplete="off" type="text" name="" id="com${res.id}" placeholder="write a comment....">
     </form>

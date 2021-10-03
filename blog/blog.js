@@ -67,30 +67,6 @@ fetch('http://localhost:3000/like',option)
 
 
 
-// function comment(){
-
-//   const contentBlog = document.getElementById('#content-bloge');
-
-//   console.log(contentBlog)
-//   contentBlog.addEventListener("submit",function(e){
-
-// e.preventDefault();
-// alert("there is event ")
-
-//   })
-
-
-// }
-
-// function comment(e){
-//   console.log(e.value)
-//   console.log(e.keyCode)
-// //   if (e.keyCode === 13) {
-// //     console.log('Enter')
-// // }
-
-// }
-
 
 function submitForm(e){
 e.preventDefault();
@@ -100,7 +76,7 @@ const input=document.querySelector(`#com${num}`);
 
  const text=document.querySelector(`#body-content-${num}`);
 
-
+let inputText=input.value.toString();
 // text.innerHTML=`<div class="comment-content" >
 // <img src="../images/مروان.jpeg">
 // <span id="text-comment">${input.value}</span>
@@ -132,12 +108,18 @@ fetch('http://localhost:3000/comment',optionComment)
 .then(result=>{
 
   console.log(result)
+
+
   text.insertAdjacentHTML('beforeend',`<div class="comment-content" >
-  <img src="../images/مروان.jpeg">
-  <span>${result[0].firstName}</span>
-  <span id="text-comment">${input.value}</span>
-   </div>`)
+  <img src="../images/f.png">
+ <div id="text-comment">
+ <span>${result[0].firstName}</span>
+ <p id="text"></p>
+ </div>
   
+   </div>`)
+   document.getElementById('text').textContent = input.value;
+
   input.value="";
   console.log(result);
 
@@ -168,6 +150,11 @@ function drop(e){
      
           bodyContent.insertAdjacentHTML("afterBegin",Comments(resComments[i]));
          console.log(resComments[i]);
+         let textComment= document.querySelector(`#text-${numComment}-${resComments[i].id}`);
+         console.log(textComment)
+
+         textComment.textContent = resComments[i].comment;
+
        
         }
 

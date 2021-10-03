@@ -34,14 +34,14 @@ if(token!=null){
  
   proflie.innerHTML=`<div id="info-user-nav" class="nav-user flex">
   
-  <img  class="img-user "alt="mohammed" src="../images/f.png">
+  <img  class="img-user "alt="mohammed" src="/Final-project/images/f.png">
   <span id="userName">${result[0].firstName}</span>
   
   </div>
   <div id="sub"class="subN">
   <ul>
   <li><a id="logOut" href="#">Log out</a></li>
-  <li><a href="./profile/profile.html">view</a></li>
+  
   </ul>
   </div>
   
@@ -50,6 +50,7 @@ if(token!=null){
 
 })}
 
+// {/* <li><a href="./profile/profile.html">view</a></li> */}
 
 
 
@@ -57,7 +58,7 @@ if(token==null){
 
     proflie.innerHTML=`
     
-    <a class="login" href="../regesteration/logIn.html">Log in</a>
+    <a class="login" href="./regesteration/logIn.html">Log in</a>
     <a class="login" href="./regesteration/regestration.html">Sign in</a>
     `
 }

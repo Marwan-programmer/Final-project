@@ -1,24 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>post edit page</title>
-    <link rel="stylesheet" href="./admin.css">
-</head>
-<body>
 
-<div class="nav-post">
+
+
+function Edit (){
+    return`<div class="nav-post">
     <div class="container">
         <div class="list-nav flex">
         
         <div>
-            <button class="go-back"><a href="./admin.html">go back to admin page</a></button>
+            <button class="go-back"><a href="http://127.0.0.1:5502/Final-project/admin/admin.html">go back to admin page</a></button>
           </div>
 
           <div>
-            <button id="publish">publish</button>
+            <button id="publish">Edit</button>
              </div>
         </div>
     </div>
@@ -55,10 +48,10 @@
                         <form id="uploadf" enctype="multipart/form-data" class="upload-form">
                         <input type="file" id="upload" name="upload">
                                
-                                <!-- <input type="submit" id="sub" value="Submit">
+                                <input type="submit" id="sub" value="Submit">
 
 
-                        <button class="insert-img">Insert from URL</button> -->
+                        <button class="insert-img">Insert from URL</button>
                      </form>
                     </div>
 
@@ -90,12 +83,13 @@
     
 </div> 
 
+`
 
 
-
-     <script src="./editPost.js"></script> 
-</body>
-</html>
+}
 
 
+    document.body.innerHTML=Edit();
 
+
+//  module.exports={Render}

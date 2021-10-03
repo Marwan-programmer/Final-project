@@ -18,7 +18,7 @@ margin-top: 100px;
     padding: 20px;
     width: 40%;
     margin: 50px auto;
-    border: rgb(68, 68, 68) solid 1px;
+    border:#4444444a solid 1px;
     margin-bottom: 60px;
     border-radius: 5px;
 }
@@ -90,7 +90,7 @@ margin-top: 100px;
   }
   
   .comment-content {
-  margin: 30px 0;
+  margin: 25px 0;
     display: flex;
     justify-content: start;
   }
@@ -102,12 +102,20 @@ margin-top: 100px;
   }
   
   .comment-content span{
-    background-color: rgb(226, 222, 222);
-    padding: 10px;
     border-radius: 10px;
+  }
+  .comment-content #text-comment{
+    background-color: #F0F2F5;
+    padding: 5px 8px;
+    border-radius: 10px;
+    min-width: 100px;
   }
 
 
+  .comment-content #text-comment p{
+
+    margin:5px 0 ;
+  }
   .img-blog{
     width: 40px;
    height: 40px;

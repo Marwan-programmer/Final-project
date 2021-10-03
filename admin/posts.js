@@ -33,7 +33,7 @@ function Posts(){
 
 
 function PostItem(result){
-return ` <div class="post-item" id="${result.id}">
+return ` <div class="post-item" id="post-${result.id}">
 <div class="title">
  <a href="#"> <h1>${result.postTitle} </h1>
  <span>1 day ago</span>
@@ -41,8 +41,9 @@ return ` <div class="post-item" id="${result.id}">
 
  </div>
 
-<div class="info-post">
-  <span>...</span>
+<div class="btn-control">
+  <button class="delete" id="${result.id}" onclick="Del(event)">delete</button>
+
 </div>
 
 </div>`
@@ -50,3 +51,4 @@ return ` <div class="post-item" id="${result.id}">
 }
 
 export { Posts,PostItem};
+// {/* <button class="edit" id="edit-${result.id}" data-post="${result.id}" onclick="Edit(event)">Edit</button> */}
